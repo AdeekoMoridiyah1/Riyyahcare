@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet the Riyyahcare doctors and search for a specialist by name or department.">
+    <title>Our Doctors | Riyyahcare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="site-pages.css">
+</head>
+
+<body class="site-page">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top container" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html"><i class="bi bi-hospital"
+                    aria-hidden="true"></i><span>Riyyahcare</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"
+                    aria-hidden="true"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Document.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Doctors.html" aria-current="page">Doctors</a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="morePagesDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">More Pages</a>
+                        <ul class="dropdown-menu" aria-labelledby="morePagesDropdown">
+                            <li><a class="dropdown-item" href="About.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="Our-Team.html">Our Team</a></li>
+                            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+                <a href="Contact.html#appointment" class="appointment-btn">Appointment</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header class="page-heading">
+            <nav class="breadcrumb-section" aria-label="Breadcrumb"><a href="index.html"><i
+                        class="bi bi-house-door-fill" aria-hidden="true"></i> Home</a><span
+                    aria-hidden="true">/</span><span class="active" aria-current="page">Doctors</span></nav>
+            <h1>Meet our doctors</h1>
+            <p>Find a specialist who can help you take the next step toward better health.</p>
+        </header>
+        <section class="content-section">
+            <div class="container">
+                <form class="doctor-search" id="doctor-search">
+                    <div class="search-field"><label for="doctor-keyword">Doctor or keyword</label>
+                        <div class="input-with-icon"><i class="bi bi-search" aria-hidden="true"></i><input
+                                id="doctor-keyword" type="search" placeholder="Try a name or specialty"></div>
+                    </div>
+                    <div class="search-field"><label for="doctor-specialty">Department</label><select
+                            id="doctor-specialty">
+                            <option value="">All departments</option>
+                            <option>Cardiology</option>
+                            <option>Neurology</option>
+                            <option>Pediatrics</option>
+                            <option>Orthopedics</option>
+                            <option>Dermatology</option>
+                            <option>Oncology</option>
+                        </select></div>
+                    <button class="btn-primary-pill" type="submit"><i class="bi bi-search" aria-hidden="true"></i> Find
+                        a doctor</button>
+                </form>
+                <p class="search-results" id="doctor-results" aria-live="polite"></p>
+                <div class="doctor-grid" id="doctor-grid">
+                    <article class="doctor-card" data-name="sarah mitchell" data-specialty="Cardiology"><img
+                            src="asset/staff-3.webp" alt="Dr. Sarah Mitchell" loading="lazy">
+                        <div class="doctor-card-body"><span class="doctor-specialty">Cardiology</span>
+                            <h2>Dr. Sarah Mitchell</h2>
+                            <p>Cardiovascular care</p><a href="Contact.html#appointment">Request an appointment <i
+                                    class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                    <article class="doctor-card" data-name="michael rodriguez" data-specialty="Neurology"><img
+                            src="asset/staff-7.webp" alt="Dr. Michael Rodriguez" loading="lazy">
+                        <div class="doctor-card-body"><span class="doctor-specialty">Neurology</span>
+                            <h2>Dr. Michael Rodriguez</h2>
+                            <p>Brain and nervous system care</p><a href="Contact.html#appointment">Request an
+                                appointment <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                    <article class="doctor-card" data-name="emily chen" data-specialty="Pediatrics"><img
+                            src="asset/staff-1.webp" alt="Dr. Emily Chen" loading="lazy">
+                        <div class="doctor-card-body"><span class="doctor-specialty">Pediatrics</span>
+                            <h2>Dr. Emily Chen</h2>
+                            <p>Children’s health</p><a href="Contact.html#appointment">Request an appointment <i
+                                    class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                    <article class="doctor-card" data-name="james thompson" data-specialty="Orthopedics"><img
+                            src="asset/staff-9.webp" alt="Dr. James Thompson" loading="lazy">
+                        <div class="doctor-card-body"><span class="doctor-specialty">Orthopedics</span>
+                            <h2>Dr. James Thompson</h2>
+                            <p>Bone and joint care</p><a href="Contact.html#appointment">Request an appointment <i
+                                    class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                    <article class="doctor-card" data-name="lisa anderson" data-specialty="Dermatology"><img
+                            src="asset/staff-5.webp" alt="Dr. Lisa Anderson" loading="lazy">
+                        <div class="doctor-card-body"><span class="doctor-specialty">Dermatology</span>
+                            <h2>Dr. Lisa Anderson</h2>
+                            <p>Skin health</p><a href="Contact.html#appointment">Request an appointment <i
+                                    class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                    <article class="doctor-card" data-name="robert kim" data-specialty="Oncology"><img
+                            src="asset/staff-12.webp" alt="Dr. Robert Kim" loading="lazy">
+                        <div class="doctor-card-body"><span class="doctor-specialty">Oncology</span>
+                            <h2>Dr. Robert Kim</h2>
+                            <p>Compassionate cancer care</p><a href="Contact.html#appointment">Request an appointment <i
+                                    class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <p class="empty-state" id="doctor-empty" hidden>No doctors match your search. Try another name or
+                    department.</p>
+            </div>
+        </section>
+        <section class="content-section soft-section">
+            <div class="container callout-panel">
+                <div><span class="eyebrow">HERE TO HELP</span>
+                    <h2>Not sure where to start?</h2>
+                    <p>Our care team can help you find the right department for your needs.</p>
+                </div><a class="btn-primary-pill" href="Contact.html">Get in touch</a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-about"><a class="footer-brand" href="index.html"><i class="bi bi-hospital"
+                        aria-hidden="true"></i> Riyyahcare</a>
+                <p>Compassionate care, close to home. Here to help you find the right care team for your health journey.
+                </p>
+            </div>
+            <div>
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="About.html">About us</a></li>
+                    <li><a href="Document.html">Departments</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Doctors.html">Doctors</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>More</h2>
+                <ul>
+                    <li><a href="Our-Team.html">Our team</a></li>
+                    <li><a href="FAQ.html">Frequently asked questions</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Contact.html#appointment">Request an appointment</a></li>
+                </ul>
+            </div>
+            <div class="footer-emergency">
+                <h2>Need urgent help?</h2>
+                <p>If you may be experiencing a medical emergency, call your local emergency number now.</p><a
+                    href="Contact.html">Contact Riyyahcare <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>© Riyyahcare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="site-pages.js"></script>
+</body>
+
+</html>

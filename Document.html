@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments | Riyyahcare</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- css -->
+    <link rel="stylesheet" href="document.css">
+</head>
+
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg custom-navbar fixed-top container">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html" aria-label="Riyyahcare home">
+                    <i class="bi bi-hospital"></i>
+                    <span>Riyyahcare</span>
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Document.html" aria-current="page">Departments</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Services.html">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Doctors.html">Doctors</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="morePagesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                More Pages
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="About.html">About Us</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="Our-Team.html">Our Team</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="FAQ.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a href="Contact.html#appointment" class="appointment-btn"> Appointment </a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <section class="page-heading">
+            <nav class="breadcrumb-section" aria-label="Breadcrumb">
+                <a href="index.html"><i class="bi bi-house-door-fill" aria-hidden="true"></i> Home</a>
+                <span aria-hidden="true">/</span>
+                <span class="active" aria-current="page">Departments</span>
+            </nav>
+            <h1>Our Medical Departments</h1>
+            <p>Expert care, advanced treatments, and a compassionate team for every stage of your health journey.</p>
+        </section>
+
+        <section class="medical-departments" id="departments" aria-label="Medical departments">
+            <div class="department-container">
+
+                <!-- LEFT COLUMN -->
+                <div class="department-column">
+
+                    <!-- Cardiology -->
+                    <div class="department-card side-card">
+                        <div class="neurology-icon"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i></div>
+                        <h3>Cardiology</h3>
+                        <p class="department-subtitle" style="color: gray;">HEART & VASCULAR CARE</p>
+
+                        <div class="department-image">
+                            <img src="./asset2/cardiology-2.webp" alt="Cardiology care">
+                            <span class="image-badge">HEART<br>CARE</span>
+                        </div>
+
+                        <p class="department-description">Personalized heart and vascular care, from prevention and
+                            diagnosis to advanced treatment.</p>
+
+                        <ul>
+                            <li>Cardiac Surgery</li>
+                            <li>Heart Rhythm Management</li>
+                            <li>Preventive Heart Care</li>
+                        </ul>
+
+                        <a href="Services.html" class="learn-more">Explore our services <span
+                                aria-hidden="true">→</span></a>
+                    </div>
+
+                    <!-- Dermatology -->
+                    <div class="department-card side-card">
+                        <div class="neurology-icon"><i class="bi bi-activity" aria-hidden="true"></i></div>
+                        <h3>Dermatology</h3>
+                        <p class="department-subtitle" style="color: gray;">SKIN HEALTH EXPERTS</p>
+
+                        <div class="department-image">
+                            <img src="./asset2/dermatology-3.webp" alt="Skin care treatment">
+                            <span class="image-badge">SKIN<br>CARE</span>
+                        </div>
+
+                        <p class="department-description">Our dermatology team helps you protect, restore, and maintain
+                            healthy skin.</p>
+
+                        <ul>
+                            <li>Skin Disease Treatment</li>
+                            <li>Acne Treatment</li>
+                            <li>Skin Health Consultation</li>
+                        </ul>
+
+                        <a href="Services.html" class="learn-more">Explore our services <span
+                                aria-hidden="true">→</span></a>
+                    </div>
+
+                </div>
+
+                <!-- CENTRE COLUMN -->
+                <div class="department-column">
+
+                    <div class="department-card neurology-card">
+
+                        <span class="featured-badge">★ FEATURED</span>
+
+                        <div class="neurology-icon">ϟ</div>
+
+                        <h3>Neurology</h3>
+                        <p class="department-subtitle">BRAIN & NERVOUS SYSTEM</p>
+
+                        <div class="department-image neurology-image">
+                            <img src="./asset2/images (2).jpg" alt="Neurology medical imaging">
+
+                            <div class="image-badges">
+                                <span><i class="bi bi-clipboard2-pulse" aria-hidden="true"></i> Advanced
+                                    diagnostics</span>
+                                <span><i class="bi bi-heart-pulse" aria-hidden="true"></i> Stroke services</span>
+                            </div>
+                        </div>
+
+                        <p class="department-description">Specialized neurological care combines advanced diagnostics
+                            with thoughtful, individualized treatment.</p>
+
+                        <div class="service-tags">
+                            <span>Brain Imaging</span>
+                            <span>Epilepsy Care</span>
+                            <span>Stroke Treatment</span>
+                            <span>Memory Disorders</span>
+                        </div>
+
+                        <a href="Services.html" class="explore-button">
+                            Explore our services <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="department-column">
+
+                    <!-- Orthopedics -->
+                    <div class="department-card side-card">
+                        <div class="neurology-icon"><i class="bi bi-bandaid-fill" aria-hidden="true"></i></div>
+                        <h3>Orthopedics</h3>
+                        <p class="department-subtitle" style="color: gray;">BONE & JOINT CARE</p>
+
+                        <div class="department-image">
+                            <img src="./asset2/orthopedics-4.webp" alt="Orthopedic healthcare">
+                            <span class="image-badge">BONE &<br>JOINT CARE</span>
+                        </div>
+
+                        <p class="department-description">Get moving with expert care for bones, joints, and muscles,
+                            including rehabilitation and surgery.</p>
+
+                        <ul>
+                            <li>Joint Replacement</li>
+                            <li>Sports Medicine</li>
+                            <li>Spine Surgery</li>
+                        </ul>
+
+                        <a href="Services.html" class="learn-more">Explore our services <span
+                                aria-hidden="true">→</span></a>
+                    </div>
+
+                    <!-- Pediatrics -->
+                    <div class="department-card side-card">
+                        <div class="neurology-icon"><i class="bi bi-balloon-heart-fill" aria-hidden="true"></i></div>
+                        <h3>Pediatrics</h3>
+                        <p class="department-subtitle" style="color: gray;">CHILDREN'S HEALTH</p>
+
+                        <div class="department-image">
+                            <img src="./asset2/images.jpg" alt="Pediatric healthcare">
+                            <span class="image-badge">CHILD<br>HEALTH</span>
+                        </div>
+
+                        <p class="department-description">Family-centered care supports children from routine checkups
+                            through every milestone.</p>
+
+                        <ul>
+                            <li>Child Health Checkups</li>
+                            <li>Vaccination Services</li>
+                            <li>Pediatric Consultation</li>
+                        </ul>
+
+                        <a href="Services.html" class="learn-more">Explore our services <span
+                                aria-hidden="true">→</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Company -->
+            <div class="footer-about">
+                <h2>Riyyahcare</h2>
+
+                <p>Compassionate care, close to home.</p>
+                <p>Explore our departments to find the right care team for you.</p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Riyyahcare on X">𝕏</a>
+                    <a href="#" aria-label="Riyyahcare on Facebook">f</a>
+                    <a href="#" aria-label="Riyyahcare on Instagram">◎</a>
+                    <a href="#" aria-label="Riyyahcare on LinkedIn">in</a>
+                </div>
+            </div>
+
+            <!-- Useful Links -->
+            <div>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About us</a></li>
+                    <li><a href="Document.html">Departments</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="Services.html">Cardiology</a></li>
+                    <li><a href="Services.html">Neurology</a></li>
+                    <li><a href="Services.html">Orthopedics</a></li>
+                    <li><a href="Services.html">Pediatrics</a></li>
+                    <li><a href="Services.html">Dermatology</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+                <h3>Patient Resources</h3>
+                <ul>
+                    <li><a href="About.html">About Riyyahcare</a></li>
+                    <li><a href="Services.html">Care services</a></li>
+                    <li><a href="Document.html#departments">Find a department</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div>
+                <h3>Plan Your Visit</h3>
+                <ul>
+                    <li><a href="Services.html">Request an appointment</a></li>
+                    <li><a href="index.html">Visit our home page</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© <strong>Riyyahcare</strong>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
